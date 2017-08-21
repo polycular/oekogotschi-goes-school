@@ -1,0 +1,12 @@
+{
+	"data": {
+		"id": "5612c1f3-cee9-4a09-8214-8e3570199726",
+		"type": "character",
+		"attributes": {
+			"name": "Torby",
+			"comfort": 5,
+			"health": 5,
+			"credits": 5
+		}
+	}
+}

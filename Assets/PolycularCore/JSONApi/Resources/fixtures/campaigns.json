@@ -1,0 +1,86 @@
+﻿{
+	"links": {
+		"self": "https://api.clustar.net/v2/graph",
+		"first": "https://api.clustar.net/v2/graph?page=1",
+		"last": "https://api.clustar.net/v2/graph?page=4",
+		"next": "https://api.clustar.net/v2/graph?page=3",
+		"prev": "https://api.clustar.net/v2/graph?page=2"
+	},
+	"data": [{
+		"id": "id-g1",
+		"type": "campaign",
+		"attributes": {
+			"name": "daniel",
+			"location": {
+				"lng": 1.0,
+				"lat": 0.0
+			}
+		},
+		"links": {
+			"self": "https://api.clustar.net/v2/graph/id-g1"
+		},
+		"relationships": {
+			"graph": {
+				"data": [{
+					"type": "node",
+					"id": "id-n1"
+				}, {
+					"type": "node",
+					"id": "id-n2"
+				}]
+			}
+		}
+	}, {
+		"id": "id-g2",
+		"type": "campaign",
+		"attributes": {
+			"name": "hannes"
+		},
+		"links": {
+			"self": "https://api.clustar.net/v2/graph/id-g2"
+		},
+		"relationships": {
+			"graph": {
+				"data": [{
+					"type": "node",
+					"id": "id-n1"
+				}, {
+					"type": "node",
+					"id": "id-n2"
+				}]
+			}
+		}
+	}],
+	"meta": {
+		"count": 100
+	},
+	"included": [{
+		"type": "node",
+		"id": "id-n1",
+		"attributes": {
+			"name": "Hannes"
+		},
+		"relationships": {
+			"campaign": {
+				"data": {
+					"type": "campaign",
+					"id": "id-g1"
+				}
+			}
+		}
+	}, {
+		"type": "node",
+		"id": "id-n2",
+		"attributes": {
+			"name": "Daniel"
+		},
+		"relationships": {
+			"campaign": {
+				"data": {
+					"type": "campaign",
+					"id": "id-g2"
+				}
+			}
+		}
+	}]
+}

@@ -1,0 +1,48 @@
+﻿{
+	"links": {
+		"self": "https://api.clustar.net/v2/graph",
+		"first": "https://api.clustar.net/v2/graph?page=1",
+		"last": "https://api.clustar.net/v2/graph?page=4",
+		"next": "https://api.clustar.net/v2/graph?page=3",
+		"prev": "https://api.clustar.net/v2/graph?page=2"
+	},
+	"data": {
+		"id": "id-g",
+		"type": "campaign",
+		"attributes": {
+			"name": "daniel"
+		},
+		"links": {
+			"self": "https://api.clustar.net/v2/graph/id-g"
+		},
+		"relationships": {
+			"graph": {
+				"data": [{
+					"type": "node",
+					"id": "id-n1"
+				}, {
+					"type": "node",
+					"id": "id-n2"
+				}]
+			}
+		}
+	},
+	"meta": {
+		"count": 100
+	},
+	"included": [
+		{
+			"type": "node",
+			"id": "id-n1",
+			"attributes": {
+				"name": "Hannes"
+			}
+		}, {
+			"type": "node",
+			"id": "id-n2",
+			"attributes": {
+				"name": "Daniel"
+			}
+		}
+	]
+}

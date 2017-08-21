@@ -1,0 +1,1091 @@
+{
+	"data": {
+		"id": "66891fc3-15e4-497b-b393-733a0e3be986",
+	    "type": "campaign",
+	    "attributes": {
+			"name": "EcoGotchi Workshop",
+			"state": "draft",
+			"score": 0
+		},
+		"relationships": {
+			"character": {
+				"data": {
+					"id": "5612c1f3-cee9-4a09-8214-8e3570199726",
+					"type": "character"
+				}
+			},
+			"first": {
+				"data": {
+					"id": "348886cf-4d58-42b9-8834-71733b91d552",
+					"type": "node"
+				}
+			},
+			"nodes": {
+				"data": [
+					{
+						"id": "348886cf-4d58-42b9-8834-71733b91d552",
+						"type": "node"
+					},
+					{
+						"id": "86f97b35-9cca-49c0-b85d-d5af07eead94",
+						"type": "node"
+					},
+					{
+						"id": "f8aa07fb-ad40-4570-a634-b976291eec97",
+						"type": "node"
+					},
+					{
+						"id": "e24293d3-bae7-4e0e-ac68-ee92755d1b6e",
+						"type": "node"
+					},
+					{
+						"id": "7182ebeb-5176-4a1d-b637-214c896bb0ab",
+						"type": "node"
+					},
+					{
+						"id": "bd8b12fe-aca9-41a2-ac4f-250e24952a02",
+						"type": "node"
+					}
+				]
+			}
+		}
+	},
+	"included": [
+		{
+			"id": "5612c1f3-cee9-4a09-8214-8e3570199726",
+			"type": "character",
+			"attributes": {
+				"name": "Torby",
+				"comfort": 5,
+				"health": 5,
+				"credits": 5
+			}
+		},
+		{
+			"id": "348886cf-4d58-42b9-8834-71733b91d552",
+			"type": "node",
+			"attributes": {
+				"name": "Seite 01/02",
+				"currentOrderId": 0
+			},
+			"relationships": {
+				"components": {
+					"data": [
+						{
+							"id": "e0476c43-3809-4a7a-a801-428ac3a3a32e",
+							"type": "component"
+						}
+					]
+				},
+				"transitions": {
+					"data": [
+						{
+							"id": "134687b2-9521-47fb-ae52-0454d4d043a1",
+							"type": "transition"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "e0476c43-3809-4a7a-a801-428ac3a3a32e",
+			"type": "component",
+			"attributes": {
+				"type": "intro",
+				"orderId": 0,
+				"texts": [
+					"Hallo ich bin Torby, ich beame mich jetzt zu dir runter! Jetzt geht es um:"
+				],
+				"topic": "Smartphones"
+			}
+		},
+		{
+			"id": "a9c9a52f-0e44-439d-8bf5-7705e6b4f6a2",
+			"type": "component",
+			"attributes" : {
+				"type": "tutorial",
+				"orderId": 1
+			}
+		},
+		{
+			"id": "2401eea4-ccc2-4f79-9303-420b17c39cd7",
+			"type": "component",
+			"attributes": {
+				"type": "nextpage",
+				"hint": "Blättere auf Seite Eins um!",
+				"orderId": 2
+			}
+		},
+		{
+			"id": "134687b2-9521-47fb-ae52-0454d4d043a1",
+			"type": "transition",
+			"attributes": {
+				"type": "next",
+				"data": {
+					"target": "86f97b35-9cca-49c0-b85d-d5af07eead94"
+				}
+			}
+		},
+		{
+			"id": "86f97b35-9cca-49c0-b85d-d5af07eead94",
+			"type": "node",
+			"attributes": {
+				"name": "Smartphone",
+				"currentOrderId": 0
+			},
+			"relationships": {
+				"components": {
+					"data": [
+						{
+							"id": "f0796859-7cbc-4bc7-a45a-9744b40261d9",
+							"type": "component"
+						},
+						{
+							"id": "b7e4d27b-4c91-4f09-beee-c16ba00676d6",
+							"type": "component"
+						},
+						{
+							"id": "e4597009-b186-4092-8fa7-5c851f47bbab",
+							"type": "component"
+						}
+					]
+				},
+				"transitions": {
+					"data": [
+						{
+							"id": "75e44f3c-0a59-4eb2-aa1f-43f6e33eb2de",
+							"type": "transition"
+						}
+					]
+				}
+			}
+		},
+		{
+		    "id": "f0796859-7cbc-4bc7-a45a-9744b40261d9",
+		    "type": "component",
+		    "attributes": {
+		        "type": "decision",
+		        "orderId": 0,
+		        "decision": "Torby hätte gerne ein neues Hyperphone. Soll er sich mal was Cooles gönnen?"
+		    },
+		    "relationships": {
+		        "consequences": {
+		            "data": [
+		                {
+		                    "id": "90c4bcc8-8f6f-4667-8e4f-537346cb0296",
+		                    "type": "consequence"
+		                },
+		                {
+		                    "id": "b2194d6e-1707-40c7-b8a8-bbc36b9672ac",
+		                    "type": "consequence"
+		                },
+		                {
+		                    "id": "3e36c904-96cb-4468-a50b-5b5f6e3ea8ba",
+		                    "type": "consequence"
+		                }
+		            ]
+		        }
+		    }
+		},
+		{
+		    "id": "90c4bcc8-8f6f-4667-8e4f-537346cb0296",
+		    "type": "consequence",
+		    "attributes": {
+		        "option": "Nein",
+		        "comfort": -2,
+		        "health": 1,
+		        "credits": 0,
+		        "header": "Drama Queen",
+		        "texts": ["Torby ist sauer, aber er hat Geld gespart und sein altes Handy tut’s auch noch und wichtige Rohstoffe bleiben erhalten."]
+		    }
+		},
+		{
+		    "id": "b2194d6e-1707-40c7-b8a8-bbc36b9672ac",
+		    "type": "consequence",
+		    "attributes": {
+		        "option": "Ein gebrauchtes zHyper8",
+		        "comfort": 1,
+		        "health": 0,
+		        "credits": -1,
+		        "header": "Alles Roger",
+		        "texts": ["Torby is zufrieden, das zHyper8 ist zwar etwas zerkratzt und kostet Geld, funktioniert sonst aber."]
+		    }
+		},
+		{
+		    "id": "3e36c904-96cb-4468-a50b-5b5f6e3ea8ba",
+		    "type": "consequence",
+		    "attributes": {
+		        "option": "Ein neues MegaQuantum 6",
+		        "comfort": 2,
+		        "health": -2,
+		        "credits": -2,
+		        "header": "Luxus Oida",
+		        "texts": ["Torby ist pleite, aber grinst trotzdem vor Freude. Dass das alte Handy im Müll landet, ist ihm egal, aber der Umwelt nicht."]
+		    }
+		},
+		{
+			"id": "b7e4d27b-4c91-4f09-beee-c16ba00676d6",
+			"type": "component",
+			"attributes": {
+				"type": "ar",
+				"orderId": 1,
+				"pageNumber": "2",
+				"markername": "Page_02",
+				"texts": [ "Empty"
+				]
+			}
+		},
+		{
+		    "id": "e4597009-b186-4092-8fa7-5c851f47bbab",
+		    "type": "component",
+		    "attributes": {
+		        "type": "multiquiz",
+		        "orderId": 2,
+		        "score": 0
+		    },
+		    "relationships": {
+		        "quizzes": {
+		            "data": [
+		                {
+		                    "id": "a313e740-13e1-42e7-b68e-6f2a0db2903f",
+		                    "type": "quiz"
+		                },
+		                {
+		                    "id": "222797a2-fcce-457c-aa46-fc2221d37f3c",
+		                    "type": "quiz"
+		                },
+		                {
+		                    "id": "4d4f4738-7157-4718-84d3-c2ed460f0095",
+		                    "type": "quiz"
+		                },
+		                {
+		                    "id": "75f55c4f-1cc0-4f29-a2c8-a1ae32d3eabf",
+		                    "type": "quiz"
+		                },
+		                {
+		                    "id": "e005df57-570a-431e-a5fc-517fd0f974ed",
+		                    "type": "quiz"
+		                }
+		            ]
+		        }
+		    }
+		},
+		{
+		    "id": "a313e740-13e1-42e7-b68e-6f2a0db2903f",
+		    "type": "quiz",
+		    "attributes": {
+		        "question": "Welche seltenen Metalle finden sich in einem Smartphone?",
+		        "answers": [
+		            "Kobalt", "Palladium", "Tantal", "Blei", "Platin"
+		        ],
+		        "correct": [
+		            0, 1, 2
+		        ],
+		        "points": 1
+		    }
+		},
+		{
+		    "id": "222797a2-fcce-457c-aa46-fc2221d37f3c",
+		    "type": "quiz",
+		    "attributes": {
+		        "question": "In welchem Land wird das meiste Kobalt abgebaut?",
+		        "answers": [
+		            "Australien", "Kenia", "Kongo", "Chile", "Frankreich"
+		        ],
+		        "correct": [
+		            2
+		        ],
+		        "points": 1
+		    }
+		},
+		{
+		    "id": "4d4f4738-7157-4718-84d3-c2ed460f0095",
+		    "type": "quiz",
+		    "attributes": {
+		        "question": "In welchem Bauteil des Handys wird Kobalt verwendet?",
+		        "answers": [
+		            "Akku", "Antenne", "Mikroprozessor", "Gehäuse", "Kamera"
+		        ],
+		        "correct": [
+		            0
+		        ],
+		        "points": 1
+		    }
+		},
+		{
+		    "id": "75f55c4f-1cc0-4f29-a2c8-a1ae32d3eabf",
+		    "type": "quiz",
+		    "attributes": {
+		        "question": "Wo kannst Du in Österreich Dein altes Handy abgeben, um Familien und Kinder in Not zu unterstützen?",
+		        "answers": [
+		            "Apotheke", "Supermarkt", "Handyshop", "Ö3 Wundertüte", "Polizei"
+		        ],
+		        "correct": [
+		            3
+		        ],
+		        "points": 1
+		    }
+		},
+		{
+		    "id": "e005df57-570a-431e-a5fc-517fd0f974ed",
+		    "type": "quiz",
+		    "attributes": {
+		        "question": "Wie teuer sind die seltenen Rohstoffe ca. für 1000 Handys?",
+		        "answers": [
+		            "2076€", "25€", "120€", "1800€", "4200€"
+		        ],
+		        "correct": [
+		            0
+		        ],
+		        "points": 1
+		    }
+		},
+		{
+			"id": "75e44f3c-0a59-4eb2-aa1f-43f6e33eb2de",
+			"type": "transition",
+			"attributes": {
+				"type": "next",
+				"data": {
+					"target": "f8aa07fb-ad40-4570-a634-b976291eec97"
+				}
+			}
+		},
+		{
+		    "id": "f8aa07fb-ad40-4570-a634-b976291eec97",
+		    "type": "node",
+		    "attributes": {
+		        "name": "Mobilität",
+		        "currentOrderId": 0
+		    },
+		    "relationships": {
+		        "components": {
+		            "data": [
+						{
+							"id": "f6fe16b0-f715-42d9-92f1-c65fbf6b505e",
+							"type": "component"
+						},
+		                {
+		                    "id": "30833181-f765-42d5-a981-dc792ca2dfa8",
+		                    "type": "component"
+		                },
+						{
+							"id": "bc843c10-1585-40ce-bd59-31b357808a86",
+							"type": "component"
+						},
+		                {
+		                    "id": "038d2eb9-2ac6-4ed5-bc7b-c4c20179e519",
+		                    "type": "component"
+		                }
+		            ]
+		        },
+		        "transitions": {
+		            "data": [
+		                {
+		                    "id": "284d0759-6d91-47d8-98f6-4f126ebd6aa1",
+		                    "type": "transition"
+		                }
+		            ]
+		        }
+		    }
+		},
+		{
+		    "id": "f6fe16b0-f715-42d9-92f1-c65fbf6b505e",
+		    "type": "component",
+		    "attributes": {
+		        "type": "intro",
+		        "orderId": 0,
+		        "texts": [
+		            "Jetzt geht es um:"
+		        ],
+		        "topic": "Mobilität"
+		    }
+		},
+		{
+		    "id": "30833181-f765-42d5-a981-dc792ca2dfa8",
+		    "type": "component",
+		    "attributes": {
+		        "type": "decision",
+		        "orderId": 1,
+		        "decision": "Torby hat mal wieder verpennt und muss möglichst schnell zur Arbeit. Welches Verkehrsmittel soll er verwenden?"
+		    },
+		    "relationships": {
+		        "consequences": {
+		            "data": [
+		                {
+		                    "id": "c1420063-1640-4524-b2ac-55e947479458",
+		                    "type": "consequence"
+		                },
+		                {
+		                    "id": "923dfa8b-93aa-473c-a788-199785104465",
+		                    "type": "consequence"
+		                },
+		                {
+		                    "id": "85eb1386-f2bb-492b-9497-f33b1a9199e4",
+		                    "type": "consequence"
+		                }
+		            ]
+		        }
+		    }
+		},
+		{
+		    "id": "c1420063-1640-4524-b2ac-55e947479458",
+		    "type": "consequence",
+		    "attributes": {
+		        "option": "Galaktik Schwebebahn",
+		        "comfort": -1,
+		        "health": 1,
+		        "credits": -1,
+		        "header": "Zug fährt ab",
+		        "texts": ["Wieder kein Sitzplatz, aber keine Abgase und so teuer war’s auch nicht. Swag oida!"]
+		    }
+		},
+		{
+		    "id": "923dfa8b-93aa-473c-a788-199785104465",
+		    "type": "consequence",
+		    "attributes": {
+		        "option": "Neutrino Hoverboard",
+		        "comfort": -2,
+		        "health": 2,
+		        "credits": 0,
+		        "header": "Crazy Ride",
+		        "texts": ["Wow das war anstrengend, aber ein ziemlicher Adrenalinkick und genügend Geld in der Tasche."]
+		    }
+		},
+		{
+		    "id": "85eb1386-f2bb-492b-9497-f33b1a9199e4",
+		    "type": "consequence",
+		    "attributes": {
+		        "option": "Flux Kompensator Raumschiff",
+		        "comfort": 2,
+		        "health": -2,
+		        "credits": -2,
+		        "header": "Lazy Dude",
+		        "texts": ["Gemütlich Hologramradio hören im Stau, kostet viel Treibstoff und vom Sitzen tut alles weh."]
+		    }
+		},
+		{
+		    "id": "bc843c10-1585-40ce-bd59-31b357808a86",
+		    "type": "component",
+		    "attributes": {
+		        "type": "ar",
+		        "orderId": 2,
+		        "pageNumber": "3",
+		        "markername": "Page_03",
+		        "texts": [ "Empty"
+		        ]
+		    }
+		},
+		{
+		    "id": "038d2eb9-2ac6-4ed5-bc7b-c4c20179e519",
+		    "type": "component",
+		    "attributes": {
+		        "type": "minigame",
+		        "orderId": 3,
+		        "name": "CycleGotchi",
+				"markername": "Page_03"
+		    }
+		},
+		{
+		    "id": "284d0759-6d91-47d8-98f6-4f126ebd6aa1",
+		    "type": "transition",
+		    "attributes": {
+		        "type": "next",
+		        "data": {
+		            "target": "e24293d3-bae7-4e0e-ac68-ee92755d1b6e"
+		        }
+		    }
+		},
+		{
+		    "id": "e24293d3-bae7-4e0e-ac68-ee92755d1b6e",
+		    "type": "node",
+		    "attributes": {
+		        "name": "Recycle",
+		        "currentOrderId": 0
+		    },
+		    "relationships": {
+		        "components": {
+		            "data": [
+						{
+							"id": "12db26e4-9219-4029-b7cf-9aba147156f6",
+							"type": "component"
+						},
+		                {
+		                    "id": "0a0aea39-bc0d-4c6f-bcbe-dc9cf502cd95",
+		                    "type": "component"
+		                },
+						{
+							"id": "7a5b79a8-060b-481d-a328-7e82f7fd940d",
+							"type": "component"
+						},
+		                {
+		                    "id": "1815f1a5-14ca-443d-b009-590cc55a9934",
+		                    "type": "component"
+		                }
+		            ]
+		        },
+		        "transitions": {
+		            "data": [
+		                {
+		                    "id": "7a5fe9fb-1117-4774-aa39-c43a9b05b2dd",
+		                    "type": "transition"
+		                }
+		            ]
+		        }
+		    }
+		},
+		{
+		    "id": "12db26e4-9219-4029-b7cf-9aba147156f6",
+		    "type": "component",
+		    "attributes": {
+		        "type": "intro",
+		        "orderId": 0,
+		        "texts": [
+		            "Jetzt geht es um:"
+		        ],
+		        "topic": "Recycling"
+		    }
+		},
+		{
+		    "id": "0a0aea39-bc0d-4c6f-bcbe-dc9cf502cd95",
+		    "type": "component",
+		    "attributes": {
+		        "type": "decision",
+		        "orderId": 1,
+		        "decision": "Torby und seine Freunde waren letztes Monat faul und der Müll stapelt sich schon in seiner WG. Was tun?"
+		    },
+		    "relationships": {
+		        "consequences": {
+		            "data": [
+		                {
+		                    "id": "2fa0f836-7148-4dd0-9135-c0ddc727fa13",
+		                    "type": "consequence"
+		                },
+		                {
+		                    "id": "119d1b12-7d4d-4195-8baf-4f81747edac6",
+		                    "type": "consequence"
+		                },
+		                {
+		                    "id": "4f7df70e-d5e9-48e6-9833-fd512699f7fa",
+		                    "type": "consequence"
+		                }
+		            ]
+		        }
+		    }
+		},
+		{
+		    "id": "2fa0f836-7148-4dd0-9135-c0ddc727fa13",
+		    "type": "consequence",
+		    "attributes": {
+		        "option": "Alles in den Zerstörer kippen",
+		        "comfort": 2,
+		        "health": -1,
+		        "credits": -1,
+		        "header": "Zack Bumm",
+		        "texts": ["Das war ja einfach, aber bissal schwindlig ist mir jetzt durch diesen Knall. Und Geld hat’s auch wieder gekostet."]
+		    }
+		},
+		{
+		    "id": "119d1b12-7d4d-4195-8baf-4f81747edac6",
+		    "type": "consequence",
+		    "attributes": {
+		        "option": "Per Hand sortieren und recyclen",
+		        "comfort": -2,
+		        "health": 2,
+		        "credits": 1,
+		        "header": "Cash Bing",
+		        "texts": ["Harte Arbeit aber dafür gibt’s Zaster beim Schrottionenhändler und die Umwelt freut sich."]
+		    }
+		},
+		{
+		    "id": "4f7df70e-d5e9-48e6-9833-fd512699f7fa",
+		    "type": "consequence",
+		    "attributes": {
+		        "option": "Recycle3000 kaufen",
+		        "comfort": 1,
+		        "health": 1,
+		        "credits": -2,
+		        "header": "Techno RatzFatz",
+		        "texts": ["Funktioniert ganz gut das Teil, teuer war’s halt."]
+		    }
+		},
+		{
+		    "id": "7a5b79a8-060b-481d-a328-7e82f7fd940d",
+		    "type": "component",
+		    "attributes": {
+		        "type": "ar",
+		        "orderId": 2,
+		        "pageNumber": "4",
+		        "markername": "Page_04",
+		        "texts": [ "Empty"
+		        ]
+		    }
+		},
+		{
+		    "id": "1815f1a5-14ca-443d-b009-590cc55a9934",
+		    "type": "component",
+		    "attributes": {
+		        "type": "minigame",
+		        "orderId": 3,
+		        "name": "MazeGotchi",
+				"markername": "Page_04"
+		    }
+		},
+		{
+		    "id": "7a5fe9fb-1117-4774-aa39-c43a9b05b2dd",
+		    "type": "transition",
+		    "attributes": {
+		        "type": "next",
+		        "data": {
+		            "target": "7182ebeb-5176-4a1d-b637-214c896bb0ab"
+		        }
+		    }
+		},
+		{
+		    "id": "7182ebeb-5176-4a1d-b637-214c896bb0ab",
+		    "type": "node",
+		    "attributes": {
+		        "name": "Essen",
+		        "currentOrderId": 0
+		    },
+		    "relationships": {
+		        "components": {
+		            "data": [
+						{
+							"id": "4b730c33-1e96-42f7-b166-aded2eaac5ef",
+							"type": "component"
+						},
+		                {
+		                    "id": "71de38f2-80bf-4389-86c0-44aae5906ff2",
+		                    "type": "component"
+		                },
+		                {
+		                    "id": "09466a6e-2e3b-4f14-aca1-acc4994cc446",
+		                    "type": "component"
+		                },
+						{
+							"id": "d4526b6e-465d-4546-899f-db2cacc11cf5",
+							"type": "component"
+						}
+		            ]
+		        },
+		        "transitions": {
+		            "data": [
+		                {
+		                    "id": "b03ac67a-ff30-4ac3-83ec-2c52dbc6c9fc",
+		                    "type": "transition"
+		                }
+		            ]
+		        }
+		    }
+		},
+		{
+		    "id": "4b730c33-1e96-42f7-b166-aded2eaac5ef",
+		    "type": "component",
+		    "attributes": {
+		        "type": "intro",
+		        "orderId": 0,
+		        "texts": [
+		            "Jetzt geht es um:"
+		        ],
+		        "topic": "Essen"
+		    }
+		},
+		{
+		    "id": "71de38f2-80bf-4389-86c0-44aae5906ff2",
+		    "type": "component",
+		    "attributes": {
+		        "type": "multiquiz",
+		        "orderId": 1,
+		        "score": 0
+		    },
+		    "relationships": {
+		        "quizzes": {
+		            "data": [
+		                {
+		                    "id": "c49c1f10-1d1e-4daf-94f9-3af105f29d9c",
+		                    "type": "quiz"
+		                },
+						{
+							"id":"23b44507-2cb5-49c1-a14f-cf93a2a4f21e",
+							"type":"quiz"
+						},
+		                {
+		                    "id": "55126675-45fb-4fa4-91dd-3097829f551a",
+		                    "type": "quiz"
+		                },
+		                {
+		                    "id": "4b7ebd4a-b8ba-401f-a369-f1970f82a002",
+		                    "type": "quiz"
+		                }
+		            ]
+		        }
+		    }
+		},
+		{
+		    "id": "c49c1f10-1d1e-4daf-94f9-3af105f29d9c",
+		    "type": "quiz",
+		    "attributes": {
+		        "question": "Wie weit müssen Bananen zu uns transportiert werden?",
+		        "answers": [
+		            "15000km", "10000km", "5000km", "1000km", "7000km"
+		        ],
+		        "correct": [
+		            1
+		        ],
+		        "points": 1
+		    }
+		},
+		{
+		    "id": "23b44507-2cb5-49c1-a14f-cf93a2a4f21e",
+		    "type": "quiz",
+		    "attributes": {
+		        "question": "Wie weit müssen Kiwis zu uns transportiert werden?",
+		        "answers": [
+					"15000km", "5000km", "1000km", "7000km", "25000km"
+		        ],
+		        "correct": [
+		            4
+		        ],
+		        "points": 1
+		    }
+		},
+		{
+		    "id": "55126675-45fb-4fa4-91dd-3097829f551a",
+		    "type": "quiz",
+		    "attributes": {
+		        "question": "Welche Produkte sind bei uns im Sommer heimisch?",
+		        "answers": [
+		            "Erdbeeren", "Ananas", "Reis", "Kartoffeln", "Salat"
+		        ],
+		        "correct": [
+		            0, 3, 4
+		        ],
+		        "points": 1
+		    }
+		},
+		{
+		    "id": "4b7ebd4a-b8ba-401f-a369-f1970f82a002",
+		    "type": "quiz",
+		    "attributes": {
+		        "question": "Was hat die meisten Kalorien?",
+		        "answers": [
+		            "500g Fleisch", "500g Kartoffelchips", "0.5l Olivenöl", "500g Butter", "500g Schokolade"
+		        ],
+		        "correct": [
+		            2
+		        ],
+		        "points": 1
+		    }
+		},
+		{
+		    "id": "09466a6e-2e3b-4f14-aca1-acc4994cc446",
+		    "type": "component",
+		    "attributes": {
+		        "type": "decision",
+		        "orderId": 2,
+		        "decision": "Torby hat mächtig Kohldampf und wenig Zeit. Was gibt’s heute zu Mittag?"
+		    },
+		    "relationships": {
+		        "consequences": {
+		            "data": [
+		                {
+		                    "id": "afa5c73a-19ed-42b3-8134-9b8f5bd3fe14",
+		                    "type": "consequence"
+		                },
+		                {
+		                    "id": "528e0ed4-3a07-44b9-a831-107f470b1716",
+		                    "type": "consequence"
+		                },
+		                {
+		                    "id": "af074b87-e7ac-4bf9-9854-b3e2b5e18275",
+		                    "type": "consequence"
+		                }
+		            ]
+		        }
+		    }
+		},
+		{
+		    "id": "afa5c73a-19ed-42b3-8134-9b8f5bd3fe14",
+		    "type": "consequence",
+		    "attributes": {
+		        "option": "Andromeda Apfel",
+		        "comfort": -1,
+		        "health": 1,
+		        "credits": 0,
+		        "header": "Fad",
+		        "texts": ["Lust hätt ich auf was anderes gehabt, aber gesund ist’s wohl."]
+		    }
+		},
+		{
+		    "id": "528e0ed4-3a07-44b9-a831-107f470b1716",
+		    "type": "consequence",
+		    "attributes": {
+		        "option": "Milchstrassen Müsli",
+		        "comfort": 1,
+		        "health": -1,
+		        "credits": -1,
+		        "header": "Galaktisch",
+		        "texts": ["Hmm, so viele exotische Zutaten, woher das wohl alles kommt…"]
+		    }
+		},
+		{
+		    "id": "af074b87-e7ac-4bf9-9854-b3e2b5e18275",
+		    "type": "consequence",
+		    "attributes": {
+		        "option": "Orion Burger",
+		        "comfort": 2,
+		        "health": -2,
+		        "credits": -2,
+		        "header": "Fettig",
+		        "texts": ["Ab und zu muss man sich was gönnen, aber auf die Waage sollte ich mich jetzt nicht stellen."]
+		    }
+		},
+		{
+		    "id": "d4526b6e-465d-4546-899f-db2cacc11cf5",
+		    "type": "component",
+		    "attributes": {
+		        "type": "ar",
+		        "orderId": 3,
+		        "pageNumber": "6",
+		        "markername": "Page_06",
+		        "texts": [ "Empty"
+		        ]
+		    }
+		},
+		{
+		    "id": "b03ac67a-ff30-4ac3-83ec-2c52dbc6c9fc",
+		    "type": "transition",
+		    "attributes": {
+		        "type": "next",
+		        "data": {
+		            "target": "bd8b12fe-aca9-41a2-ac4f-250e24952a02"
+		        }
+		    }
+		},
+		{
+		    "id": "bd8b12fe-aca9-41a2-ac4f-250e24952a02",
+		    "type": "node",
+		    "attributes": {
+		        "name": "Wohnen",
+		        "currentOrderId": 0
+		    },
+		    "relationships": {
+		        "components": {
+		            "data": [
+      						{
+      							"id": "79da97f0-8275-4097-8334-6b6e9eead2c0",
+      							"type": "component"
+      						},
+                  {
+                      "id": "122b89ec-5d1e-4f25-9c3c-b86ae7fd0ebc",
+                      "type": "component"
+                  },
+                  {
+                      "id": "94ace43e-5840-4af2-8658-57212364e013",
+                      "type": "component"
+                  },
+	                {
+	                    "id": "e86099f6-c14e-4a65-926a-1859dbcae2ce",
+	                    "type": "component"
+	                },
+	                {
+	                    "id": "68d7005d-fd9e-4401-80be-fec3b7511e3b",
+	                    "type": "component"
+	                }
+
+		            ]
+		        },
+		        "transitions": {
+		            "data": [
+		                {
+		                    "id": "55ed7de7-367b-4c71-a5a6-eea4fd0e7d42",
+		                    "type": "transition"
+		                }
+		            ]
+		        }
+		    }
+		},
+		{
+		    "id": "79da97f0-8275-4097-8334-6b6e9eead2c0",
+		    "type": "component",
+		    "attributes": {
+		        "type": "intro",
+		        "orderId": 0,
+		        "texts": [
+		            "Jetzt geht es um:"
+		        ],
+		        "topic": "Wohnen"
+		    }
+		},
+		{
+		    "id": "122b89ec-5d1e-4f25-9c3c-b86ae7fd0ebc",
+		    "type": "component",
+		    "attributes": {
+		        "type": "decision",
+		        "orderId": 1,
+		        "decision": "Torby hasst den Winter und friert. Was tun?"
+		    },
+		    "relationships": {
+		        "consequences": {
+		            "data": [
+		                {
+		                    "id": "32e75315-3d95-4d67-939f-286ae9e7a572",
+		                    "type": "consequence"
+		                },
+		                {
+		                    "id": "04fe28d2-a33f-492f-8158-5b4350c1d798",
+		                    "type": "consequence"
+		                },
+		                {
+		                    "id": "7d9a95ca-f198-4b9b-8263-fd5b83fa6bba",
+		                    "type": "consequence"
+		                }
+		            ]
+		        }
+		    }
+		},
+		{
+		    "id": "32e75315-3d95-4d67-939f-286ae9e7a572",
+		    "type": "consequence",
+		    "attributes": {
+		        "option": "Atomheizung bis zum Anschlag aufdrehen",
+		        "comfort": 2,
+		        "health": -1,
+		        "credits": -2,
+		        "header": "Easy",
+		        "texts": ["Kurz gedreht und es ist schön warm, auf die Nuklearrechnung freu ich mich schon."]
+		    }
+		},
+		{
+		    "id": "04fe28d2-a33f-492f-8158-5b4350c1d798",
+		    "type": "consequence",
+		    "attributes": {
+		        "option": "Ab in die Ganzkörper Spielekonsole",
+		        "comfort": 1,
+		        "health": 2,
+		        "credits": 0,
+		        "header": "Epic Win",
+		        "texts": ["Cooles VR Game, aber man kommt schön ins schwitzen."]
+		    }
+		},
+		{
+		    "id": "7d9a95ca-f198-4b9b-8263-fd5b83fa6bba",
+		    "type": "consequence",
+		    "attributes": {
+		        "option": "NanoIsolations Spray auf die Innenwände",
+		        "comfort": -1,
+		        "health": -1,
+		        "credits": 1,
+		        "header": "My home is my castle",
+		        "texts": ["Puh das war jetzt schon a bissal a Arbeit, schwindlig ist mir von dem Geruch, aber das wird viel Geld sparen."]
+		    }
+		},
+		{
+		    "id": "94ace43e-5840-4af2-8658-57212364e013",
+		    "type": "component",
+		    "attributes": {
+		        "type": "ar",
+		        "orderId": 2,
+		        "pageNumber": "7",
+		        "markername": "Page_07",
+		        "texts": [ "Empty"
+		        ]
+		    }
+		},
+		{
+		    "id": "e86099f6-c14e-4a65-926a-1859dbcae2ce",
+		    "type": "component",
+		    "attributes": {
+		        "type": "multiquiz",
+		        "orderId": 3,
+		        "score": 0
+		    },
+		    "relationships": {
+		        "quizzes": {
+		            "data": [
+		                {
+		                    "id": "4c755f00-63e7-4cd1-9ffd-92f0e5058fbf",
+		                    "type": "quiz"
+		                },
+		                {
+		                    "id": "914504c4-6325-421e-b261-e0a7109ed5ba",
+		                    "type": "quiz"
+		                },
+		                {
+		                    "id": "a29ea9c0-2198-40de-8b14-8bbb2dd72445",
+		                    "type": "quiz"
+		                },
+		                {
+		                    "id": "614a8df0-0b42-449b-bc2d-7feded7f45cd",
+		                    "type": "quiz"
+		                }
+		            ]
+		        }
+		    }
+		},
+		{
+		    "id": "4c755f00-63e7-4cd1-9ffd-92f0e5058fbf",
+		    "type": "quiz",
+		    "attributes": {
+		        "question": "Was isoliert bei gleicher Dicke am besten?",
+		        "answers": [
+		            "Metall", "Styropor", "Glas", "Beton", "Sand"
+		        ],
+		        "correct": [
+		            1
+		        ],
+		        "points": 1
+		    }
+		},
+		{
+		    "id": "914504c4-6325-421e-b261-e0a7109ed5ba",
+		    "type": "quiz",
+		    "attributes": {
+		        "question": "Wie viel Wasser verbrauchen wir im Durchschnitt in Österreich täglich?",
+		        "answers": [
+		            "40l", "15l", "300l", "90l", "130l"
+		        ],
+		        "correct": [
+		            4
+		        ],
+		        "points": 1
+		    }
+		},
+		{
+		    "id": "a29ea9c0-2198-40de-8b14-8bbb2dd72445",
+		    "type": "quiz",
+		    "attributes": {
+		        "question": "Welche Desktophintergrundfarbe verbraucht am wenigsten Energie?",
+		        "answers": [
+		            "Weiß", "Pink", "Schwarz", "Grün", "Blau"
+		        ],
+		        "correct": [
+		            2
+		        ],
+		        "points": 1
+		    }
+		},
+		{
+		    "id": "614a8df0-0b42-449b-bc2d-7feded7f45cd",
+		    "type": "quiz",
+		    "attributes": {
+		        "question": "Welche Lampe braucht am wenigsten Energie?",
+		        "answers": [
+		            "Glühbirne", "LED Glühbirne", "Halogen", "Energiesparlampe", "Laser"
+		        ],
+		        "correct": [
+		            1
+		        ],
+		        "points": 1
+		    }
+		},
+		{
+			"id": "68d7005d-fd9e-4401-80be-fec3b7511e3b",
+			"type": "component",
+			"attributes": {
+				"type": "end",
+	        	"orderId": 4
+			}
+		}
+    ]
+}

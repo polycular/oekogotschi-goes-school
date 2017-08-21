@@ -1,0 +1,87 @@
+<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			xmlns:Eco="clr-namespace:EcoGotchi.UI"
+			xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			x:Name="Intro"
+			mc:Ignorable="d">
+
+	<Grid.Resources>
+		<ResourceDictionary Source="GlobalRes.xaml" />
+	</Grid.Resources>
+
+	<Viewbox Stretch="Uniform">
+		<Grid x:Name="Gr_Main"
+					Width="1080"
+					Height="1920"
+					Background="{StaticResource Scb_Blue5}">
+
+			<Grid.RowDefinitions>
+				<RowDefinition Height="0.62*" />
+				<RowDefinition Height="0.38*" />
+			</Grid.RowDefinitions>
+
+			<!--<Eco:Speechbubble x:Name="Uc_Speechbubble" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />-->
+
+			<Rectangle Grid.Row="0"
+								 HorizontalAlignment="Stretch"
+								 VerticalAlignment="Stretch"
+								 Fill="{StaticResource Lgb_IntroCharBg}" />
+
+			<Rectangle Grid.Row="0"
+								 Height="10"
+								 HorizontalAlignment="Stretch"
+								 VerticalAlignment="Bottom"
+								 Fill="{StaticResource Scb_Blue4}" />
+
+			<Rectangle Fill="{StaticResource Scb_Blue5}"
+								 Margin="0,0,0,-60"
+								 Height="100"
+								 Width="100"
+								 RadiusX="20"
+								 RadiusY="20"
+								 VerticalAlignment="Bottom"
+								 RenderTransformOrigin="0.5,0.5">
+
+				<Rectangle.RenderTransform>
+					<RotateTransform Angle="45" />
+				</Rectangle.RenderTransform>
+			</Rectangle>
+
+			<StackPanel Grid.Row="1">
+				
+			<TextBlock x:Name="Tb_Intro"				 
+								 Margin="200,100,200,0"
+								 LineHeight="60"
+								 HorizontalAlignment="Center"
+								 VerticalAlignment="Top"
+								 FontSize="38"
+								 Foreground="White"
+								 Style="{StaticResource OpenSansExtraBold}"
+								 Text="&quot;Hallo ich bin Torbi. Ich komme vom Planeten Wabbadobu und studiere an der Gagga-Akademie. Ich porte mich jetzt zu Dir!"
+								 TextWrapping="Wrap" />
+
+				<TextBlock	x:Name="Tb_Topic"
+									Margin="0,50,0,0"
+									Style="{StaticResource OpenSansExtraBold}" 
+									Foreground="{StaticResource Scb_Blue3}"
+									HorizontalAlignment="Center"
+									FontSize="96"
+									Text=""/>
+				
+			</StackPanel>
+
+			<Grid Grid.Row="1"
+						Height="100"
+						Width="100"
+						Margin="0,0,0,50"
+						VerticalAlignment="Bottom"
+						>
+				
+				<Eco:ConfirmButton />
+
+			</Grid>
+
+		</Grid>
+	</Viewbox>
+</Grid>

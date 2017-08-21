@@ -1,0 +1,18 @@
+<!-- Created using Noesis XAML exporter for TexturePacker (http://www.texturepacker.com) -->
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+	<ImageBrush x:Key="Ib_header-bg-shape" ImageSource="textureatlas.png" Viewbox="4,4,1440,394" ViewboxUnits="Absolute" Stretch="Fill"/>
+	<ImageBrush x:Key="Ib_icon-coins" ImageSource="textureatlas.png" Viewbox="4,402,86,86" ViewboxUnits="Absolute" Stretch="Fill"/>
+	<ImageBrush x:Key="Ib_icon-decision" ImageSource="textureatlas.png" Viewbox="94,402,86,86" ViewboxUnits="Absolute" Stretch="Fill"/>
+	<ImageBrush x:Key="Ib_icon-forward" ImageSource="textureatlas.png" Viewbox="184,402,86,86" ViewboxUnits="Absolute" Stretch="Fill"/>
+	<ImageBrush x:Key="Ib_icon-health" ImageSource="textureatlas.png" Viewbox="274,402,86,86" ViewboxUnits="Absolute" Stretch="Fill"/>
+	<ImageBrush x:Key="Ib_icon-help" ImageSource="textureatlas.png" Viewbox="364,402,86,86" ViewboxUnits="Absolute" Stretch="Fill"/>
+	<ImageBrush x:Key="Ib_icon-mood" ImageSource="textureatlas.png" Viewbox="454,402,86,86" ViewboxUnits="Absolute" Stretch="Fill"/>
+	<ImageBrush x:Key="Ib_scan" ImageSource="textureatlas.png" Viewbox="1448,4,256,256" ViewboxUnits="Absolute" Stretch="Fill"/>
+	<ImageBrush x:Key="Ib_button-stats" ImageSource="textureatlas.png" Viewbox="1448,264,190,190" ViewboxUnits="Absolute" Stretch="Fill"/>
+	<ImageBrush x:Key="Ib_button-torbi" ImageSource="textureatlas.png" Viewbox="1642,264,190,190" ViewboxUnits="Absolute" Stretch="Fill"/>
+	<ImageBrush x:Key="Ib_button_fillbg" ImageSource="textureatlas.png" Viewbox="1836,4,190,190" ViewboxUnits="Absolute" Stretch="Fill"/>
+
+</ResourceDictionary>

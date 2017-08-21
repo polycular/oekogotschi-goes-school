@@ -1,0 +1,29 @@
+{
+	"data": {
+		"id": "f0796859-7cbc-4bc7-a45a-9744b40261d9",
+		"type": "component",
+		"attributes": {
+			"type": "decision",
+			"orderId": 0,
+			"question": ""
+		},
+		"relationships": {
+			"consequences": {
+				"data": [
+					{
+						"id": "90c4bcc8-8f6f-4667-8e4f-537346cb0296",
+						"type": "consequence"
+					},
+					{
+						"id": "b2194d6e-1707-40c7-b8a8-bbc36b9672ac",
+						"type": "consequence"
+					},
+					{
+						"id": "3e36c904-96cb-4468-a50b-5b5f6e3ea8ba",
+						"type": "consequence"
+					}
+				]
+			}
+		}
+	}
+}

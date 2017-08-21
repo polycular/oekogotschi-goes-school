@@ -1,0 +1,11 @@
+{
+	"data": {
+		"id": "f3ae4ddc-dba0-4902-9f47-bfb731ddc9af",
+		"type": "component",
+		"attributes": {
+			"type": "minigame",
+			"name": "CycleGotchi",
+			"orderId": 0
+		}
+	}
+}

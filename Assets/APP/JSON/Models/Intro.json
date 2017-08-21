@@ -1,0 +1,12 @@
+{
+	"data": {
+		"id": "e0476c43-3809-4a7a-a801-428ac3a3a32e",
+		"type": "component",
+		"attributes": {
+			"type": "intro",
+			"texts": [
+				"Hallo, Ich bin Torby!"
+			]
+		}
+	}
+}

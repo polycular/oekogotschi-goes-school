@@ -1,0 +1,99 @@
+<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			xmlns:Eco="clr-namespace:EcoGotchi.UI"
+			xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			x:Name="MinigameEndscreen"
+			mc:Ignorable="d">
+
+	<Grid.Resources>
+		<ResourceDictionary Source="GlobalRes.xaml" />
+	</Grid.Resources>
+
+	<Viewbox Stretch="Uniform">
+		<Grid x:Name="Gr_Main"
+					Width="1080"
+					Height="1920"
+					Background="{StaticResource Scb_Blue5}">
+
+			<Grid >
+
+				<StackPanel Orientation="Vertical"
+										VerticalAlignment="Center"
+										HorizontalAlignment="Center"
+										Margin="50,-500,50,0">
+					
+					<TextBlock Style="{StaticResource OpenSansRegular}"
+										 Margin="0,0,0,20"
+										 Text="Du hast "
+										 Foreground="White"
+										 FontSize="40"
+										 VerticalAlignment="Bottom"
+										 HorizontalAlignment="Center"
+										/>
+
+					<TextBlock x:Name="Tb_MinigamePoints"
+										 Style="{StaticResource OpenSansExtraBold}" 
+										 Margin="0,0,0,20"
+										 Text="456"
+										 Foreground="White"
+										 FontSize="60"
+										 VerticalAlignment="Bottom"
+										 HorizontalAlignment="Center"
+										 />
+
+					<TextBlock Style="{StaticResource OpenSansRegular}" 
+										 Text=" Minispiel Punkte erreicht!"
+										 Foreground="White"
+										 FontSize="40"
+										 VerticalAlignment="Bottom"
+										 HorizontalAlignment="Center"
+										 />
+
+				</StackPanel>
+			</Grid>
+
+			<Grid VerticalAlignment="Center"
+						HorizontalAlignment="Center"
+						Margin="50,0,50,0">
+				
+				<StackPanel Orientation="Horizontal">
+					<TextBlock Style="{StaticResource OpenSansRegular}" 
+										 Text="Dafür bekommst du "
+										 Foreground="White"
+										 FontSize="40"
+										 VerticalAlignment="Bottom"
+										 />
+
+					<TextBlock x:Name="Tb_EcoPoints"
+										 Style="{StaticResource OpenSansExtraBold}" 
+										 Text="200"
+										 Margin="20,0,20,-4"
+										 Foreground="{StaticResource Scb_Blue3}"
+										 FontSize="60"
+										 VerticalAlignment="Bottom"
+										 />
+
+					<TextBlock Style="{StaticResource OpenSansRegular}" 
+										 Text=" Ökogotchi Punkte!"
+										 Foreground="White"
+										 FontSize="40"
+										 VerticalAlignment="Bottom"
+										 />
+
+				</StackPanel>
+			</Grid>
+
+			<Grid Grid.Row="1"
+						Height="100"
+						Width="100"
+						Margin="0,0,0,50"
+						VerticalAlignment="Bottom"
+						>
+				
+				<Eco:ConfirmButton />
+			</Grid>
+
+		</Grid>
+	</Viewbox>
+</Grid>

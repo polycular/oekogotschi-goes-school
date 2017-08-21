@@ -1,0 +1,30 @@
+{
+	"data": {
+		"id": "66891fc3-15e4-497b-b393-733a0e3be986",
+	    "type": "campaign",
+	    "attributes": {
+			"name": "Test Rallye Hallein",
+			"state": "draft"
+		},
+		"relationships": {
+			"first": {
+				"data": {
+					"id": "bb287a32-3670-4ccf-a394-e372e96e3e7e",
+					"type": "node"
+				}
+			},
+			"nodes": {
+				"data": [
+					{
+						"id": "376ce6e4-03cf-454a-b1c6-09f3f1ec1dec",
+						"type": "node"
+					},
+					{
+						"id": "3fd134df-73e4-4da2-a886-dbf455d3eed3",
+						"type": "node"
+					}
+				]
+			}
+		}
+	}
+}

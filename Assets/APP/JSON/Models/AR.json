@@ -1,0 +1,14 @@
+{
+	"data": {
+		"id": "5c96cfa2-28f6-4c72-93ca-2ee793051b0c",
+		"type": "component",
+		"attributes": {
+			"type": "ar",
+			"orderId": 0,
+			"markername": "stone",
+			"texts": [
+				"Bla bla bla ?"
+			]
+		}
+	}
+}

@@ -1,0 +1,244 @@
+<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			xmlns:Eco="clr-namespace:EcoGotchi.UI"
+			xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			x:Name="Headerbar"
+			mc:Ignorable="d"
+			SnapsToDevicePixels="True">
+
+	<Grid.Resources>
+		<ResourceDictionary Source="GlobalRes.xaml" />
+	</Grid.Resources>
+
+
+
+	<Viewbox Stretch="UniformToFill"
+					 HorizontalAlignment="Center"
+					 VerticalAlignment="Top">
+
+		<Grid Height="1920"
+					Width="1440"
+					Margin="0,-5,0,0">
+
+			<Rectangle Width="1440"
+							   Height="394"
+								 HorizontalAlignment="Center"
+								 VerticalAlignment="Top"
+								 Fill="{StaticResource Scb_Blue5}"
+								 OpacityMask="{StaticResource Ib_header-bg-shape}" />
+
+		</Grid>
+
+	</Viewbox>
+
+
+	<Viewbox Stretch="Uniform">
+		<Grid x:Name="Gr_Main"
+					Width="1080"
+					Height="1920">
+
+			<Grid.RowDefinitions>
+				<RowDefinition Height="0.2*" />
+				<RowDefinition Height="0.8*" />
+			</Grid.RowDefinitions>
+
+			<!-- Container -->
+			<Grid Grid.Row="0"
+						HorizontalAlignment="Stretch"
+						VerticalAlignment="Stretch">
+
+				<!-- Torbi Avatar -->
+				<Grid Width="200"
+							Height="200"
+							Margin="35"
+							HorizontalAlignment="Left"
+							VerticalAlignment="Top">
+
+					<Ellipse Fill="{StaticResource Scb_Blue3}" />
+					<Ellipse Width="190"
+									 Height="190"
+									 Fill="{StaticResource Ib_button-torbi}" />
+				</Grid>
+
+				<!-- Score -->
+				<Grid Width="130"
+							Height="65"
+							Margin="180,0,0,180"
+							HorizontalAlignment="Left"
+							VerticalAlignment="Bottom">
+
+					<Rectangle Fill="{StaticResource Scb_Blue3}"
+										 RadiusX="20"
+										 RadiusY="20" />
+
+					<Rectangle Height="50"
+										 Width="115"
+										 Fill="White"
+										 RadiusX="15"
+										 RadiusY="15" />
+
+					<TextBlock x:Name="Tb_Score"
+										 Margin="20,0,0,0"
+										 VerticalAlignment="Center"
+										 FontFamily="Fonts/#Open Sans"
+										 FontSize="38"
+										 FontWeight="Bold"
+										 Foreground="Black"
+										 Text="0" />
+				</Grid>
+
+				<!--StatBoxes -->
+				<Grid x:Name="Gr_StatBoxes" Visibility="Visible"
+							Height="130"
+							Margin="350,0,180,180"
+							HorizontalAlignment="Stretch"
+							VerticalAlignment="Bottom">
+
+					<Viewbox Stretch="Uniform" HorizontalAlignment="Center">
+						<StackPanel Orientation="Horizontal">
+							<Eco:StatBox x:Name="StBox_Comfort" Margin="0,0,20,0" FillIcon="{StaticResource Ib_icon-mood}" FillBrush="{StaticResource Scb_Magenta1}" />
+							<Eco:StatBox x:Name="StBox_Health" Margin="0,0,20,0" FillIcon="{StaticResource Ib_icon-health}" FillBrush="{StaticResource Scb_Green1}" />
+							<Eco:StatBox x:Name="StBox_Credits" FillIcon="{StaticResource Ib_icon-coins}" FillBrush="{StaticResource Scb_Orange1}" />
+						</StackPanel>
+					</Viewbox>
+
+				</Grid>
+
+				<!-- Countdown Timer -->
+				<StackPanel x:Name="Sp_Countdown" Visibility="Hidden"
+							Margin="0,45,0,0"
+							HorizontalAlignment="Center"
+							VerticalAlignment="Top">
+
+					<TextBlock x:Name="Tb_TimeRemaining"
+										 FontFamily="Fonts/#Open Sans"
+										 FontSize="60"
+										 FontWeight="Bold"
+										 Foreground="White"
+										 Text="00:00" />
+
+					<TextBlock x:Name="Tb_GamePoints"
+										 HorizontalAlignment="Center"
+										 FontFamily="Fonts/#Open Sans"
+										 FontSize="60"
+										 FontWeight="Bold"
+										 Foreground="White"
+										 Text="0" />
+
+
+				</StackPanel>
+
+			</Grid>
+
+			<!-- Sandwich Container -->
+			<Grid Grid.RowSpan="2">
+
+				<!-- Sandwich Bg -->
+				<Button x:Name="Btn_Bg"
+							Style="{StaticResource Btn_Invis}"
+							Grid.RowSpan="2"
+							HorizontalAlignment="Stretch"
+							VerticalAlignment="Stretch"
+							/>
+
+				<!-- Sandwich -->
+				<Grid x:Name="Gr_Sandwich"
+							Height="100"
+							Width="100"
+							Margin="0,90,30,0"
+							HorizontalAlignment="Right"
+							VerticalAlignment="Top">
+
+					<StackPanel VerticalAlignment="Center">
+						<Rectangle Height="15"
+										 Width="80"
+										 Fill="{StaticResource Scb_Blue3}"
+										 RadiusX="5"
+										 RadiusY="5"
+										 Margin="0,0,0,15" />
+
+						<Rectangle Height="15"
+										 Width="80"
+										 Fill="{StaticResource Scb_Blue3}"
+										 RadiusX="5"
+										 RadiusY="5"
+										 Margin="0,0,0,15" />
+
+						<Rectangle Height="15"
+										 Width="80"
+										 Fill="{StaticResource Scb_Blue3}"
+										 RadiusX="5"
+										 RadiusY="5" />
+					</StackPanel>
+
+					<Button x:Name="Btn_Sandwich" Style="{StaticResource Btn_Invis}" />
+
+				</Grid>
+
+				<!-- Sandwich Context -->
+				<Grid x:Name="Gr_SandwichContent" Visibility="Hidden"
+							Grid.RowSpan="2"
+							HorizontalAlignment="Right"
+							VerticalAlignment="Top"
+							Height="440"
+							Width="630"
+							Margin="0,-30,-30,0"
+							>
+
+					<Border BorderThickness="5,0,0,5"
+									BorderBrush="{StaticResource Scb_Blue4}"
+									CornerRadius="32.5">
+						
+						<Rectangle Fill="{StaticResource Scb_Blue5}"
+											 RadiusX="30"
+											 RadiusY="30"
+										 />
+					</Border>
+
+					<StackPanel Margin="80,120,110,0">
+						<Grid Margin="0,0,0,30">
+							<Rectangle Height="100"
+											 Fill="{StaticResource Scb_Blue4}"
+											 RadiusX="30"
+											 RadiusY="30"
+											 />
+
+							<TextBlock Text="Neu starten"
+												 Style="{StaticResource OpenSansBold}"
+												 Foreground="White"
+												 FontSize="45"
+												 VerticalAlignment="Center"
+												 HorizontalAlignment="Center"/>
+
+							<Button	x:Name="Btn_Context_Reset"
+											Style="{StaticResource Btn_Invis}"
+											/>
+						</Grid>
+
+						<Grid Margin="0,0,0,30">
+							<Rectangle Height="100"
+											 Fill="{StaticResource Scb_Blue4}"
+											 RadiusX="30"
+											 RadiusY="30"
+											 />
+
+							<TextBlock Text="Beenden"
+												 Style="{StaticResource OpenSansBold}"
+												 Foreground="White"
+												 FontSize="45"
+												 VerticalAlignment="Center"
+												 HorizontalAlignment="Center"/>
+
+							<Button	x:Name="Btn_Context_Exit"
+											Style="{StaticResource Btn_Invis}"
+											/>
+						</Grid>
+					</StackPanel>
+
+				</Grid>
+			</Grid>
+
+		</Grid>
+	</Viewbox>
+</Grid>

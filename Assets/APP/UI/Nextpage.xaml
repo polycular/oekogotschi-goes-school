@@ -1,0 +1,33 @@
+<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			xmlns:Eco="clr-namespace:EcoGotchi.UI"
+			xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			x:Name="Nextpage"
+			mc:Ignorable="d">
+
+	<Viewbox Stretch="Uniform">
+
+		<Grid Width="1080"
+					Height="1920">
+
+			<Grid
+						Width="1080"
+						Height="1920">
+
+				<TextBlock x:Name="Tb_Content"
+									 Text="Text"
+									 FontFamily="Fonts/#Open Sans"
+									 TextAlignment="Center"
+									 FontSize="72"
+									 TextWrapping="Wrap"
+									 Height="500"
+									 Foreground="White"/>
+
+				<Button x:Name="Btn_Next"
+								Background="Transparent"/>
+			</Grid>
+
+		</Grid>
+	</Viewbox>
+</Grid>

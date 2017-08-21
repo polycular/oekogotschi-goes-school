@@ -1,0 +1,24 @@
+{
+	"data": {
+		"id": "e4597009-b186-4092-8fa7-5c851f47bbab",
+		"type": "component",
+		"attributes": {
+			"type": "multiquiz",
+			"orderId": 0,
+			"question": "Ist A ein A, B oder C?",
+			"answers": [
+				"C",
+				"A",
+				"B"
+			],
+			"correct": [
+				1
+			],
+			"points": 1,
+			"chosen": [
+				2
+			],
+			"score": 1
+		}
+	}
+}

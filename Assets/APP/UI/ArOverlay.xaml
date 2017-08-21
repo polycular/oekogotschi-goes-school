@@ -1,0 +1,367 @@
+<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			xmlns:Eco="clr-namespace:EcoGotchi.UI"
+			xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			x:Name="ArOverlay"
+			mc:Ignorable="d">
+
+	<Grid.Resources>
+		<ResourceDictionary Source="GlobalRes.xaml" />
+	</Grid.Resources>
+
+	<Viewbox Stretch="Uniform">
+
+		<Grid x:Name="Gr_Main"
+					Width="1080"
+					Height="1920">
+
+			<Grid.RowDefinitions>
+				<RowDefinition Height="0.65*" />
+				<RowDefinition Height="0.35*" />
+			</Grid.RowDefinitions>
+
+			<Rectangle Grid.Row="0"
+								 Fill="{StaticResource Lgb_ArOverlay}" />
+
+			<Rectangle Grid.Row="0"
+								 Height="10"
+								 HorizontalAlignment="Stretch"
+								 VerticalAlignment="Bottom"
+								 Fill="{StaticResource Scb_Blue4}" />
+
+			
+			<Grid Grid.Row="1"
+						Background="{StaticResource Scb_Blue5}">
+
+				
+				<!-- Speech -->
+				<Grid x:Name="Gr_Speech" Visibility="Collapsed"
+							Height="300"
+							Margin="150,140,150,0"
+							VerticalAlignment="Top">
+
+					<TextBlock x:Name="Tb_Speech"
+										 Style="{StaticResource OpenSansBold}"
+										 Text="&quot;Genial gemacht. Du findest mich immer auf den Portalen.&quot;"
+										 TextWrapping="Wrap"
+										 TextAlignment="Center"
+										 Foreground="White"
+										 FontSize="40"
+										 />
+
+				</Grid>
+				
+				<!-- Decision Outcome -->
+				<Grid x:Name="Gr_Outcome"
+							Height="400"
+							Margin="150,80,150,0"
+							VerticalAlignment="Top"
+				>
+
+					<StackPanel>
+					<TextBlock x:Name="Tb_Outcome_Header"
+										 Style="{StaticResource OpenSansExtraBold}"
+										 Margin="0,0,0,20"
+										 Foreground="{StaticResource Scb_Blue4}"
+										 FontSize="72"
+										 HorizontalAlignment="Center"
+										 />
+
+						<TextBlock x:Name="Tb_Outcome_Content"
+											 Style="{StaticResource OpenSansBold}"
+											 TextWrapping="Wrap"
+											 TextAlignment="Center"
+											 FontSize="35"
+											 Foreground="White"
+											 />
+
+						<Grid Margin="0,30,0,0"
+									Width="500">
+
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="0.3*"/>
+								<ColumnDefinition Width="0.3*"/>
+								<ColumnDefinition Width="0.3*"/>
+							</Grid.ColumnDefinitions>
+							
+							<TextBlock	x:Name="Tb_Description_Comfort"
+													Style="{StaticResource OpenSansBold}"
+													HorizontalAlignment="Center"
+													VerticalAlignment="Center"												
+													Grid.Column="0"
+													Text=""
+													FontSize="62"
+													Foreground="{StaticResource Scb_Magenta1}"/>
+
+							<TextBlock	x:Name="Tb_Description_Health"
+													Style="{StaticResource OpenSansBold}"
+													HorizontalAlignment="Center"
+													VerticalAlignment="Center"												
+													Grid.Column="1"	
+													Text=""
+													FontSize="62"
+													Foreground="{StaticResource Scb_Green1}"/>
+
+							<TextBlock	x:Name="Tb_Description_Credits"
+													Style="{StaticResource OpenSansBold}"
+													HorizontalAlignment="Center"
+													VerticalAlignment="Center"												
+													Grid.Column="2"
+													Text=""
+													FontSize="62"
+													Foreground="{StaticResource Scb_Orange1}"/>
+						</Grid>
+
+					</StackPanel>
+
+				</Grid>
+
+				<!-- Scan prompt -->
+				<Grid x:Name="Gr_ScanPrompt" Visibility="Hidden"
+							Width="780"
+							Margin="0,180,0,100"
+							HorizontalAlignment="Center">
+					
+					<StackPanel Orientation="Horizontal">
+
+						<Grid Height="200"
+									Width="200"
+									Margin="0,0,70,0">
+
+							<Viewbox Stretch="Uniform"
+											 HorizontalAlignment="Right">
+								
+							<Rectangle Fill="{StaticResource Ib_scan}"
+												 Height="256"
+												 Width="256"
+												 />
+							</Viewbox>
+
+						</Grid>
+
+						<TextBlock Foreground="White"
+										 Width="300"
+										 Margin="0,0,30,0"
+										 Style="{StaticResource OpenSansExtraBold}"
+										 TextWrapping="Wrap"
+										 FontSize="56"
+										 Text="Du findest Torby auf Seite"
+										 VerticalAlignment="Center"
+										 />
+
+						<TextBlock x:Name="Tb_ScanPrompt"
+											 Text="1"
+											 FontSize="200"
+											 Style="{StaticResource OpenSansExtraBold}"
+											 VerticalAlignment="Center"
+											 Foreground="{StaticResource Scb_Blue3}"
+										 />
+
+					</StackPanel>
+				</Grid>
+				
+
+			</Grid>
+
+
+			<!--<Eco:Scorebars x:Name="Uc_Scrbrs"
+										 Grid.Row="0"
+										 Grid.RowSpan="2"
+										 Width="400"
+										 Height="400"
+										 Margin="50,0,0,0"
+										 HorizontalAlignment="Center"
+										 VerticalAlignment="Top" />-->
+
+			<!-- <Eco:ARWidget Grid.Row="1" /> -->
+
+			<!--<Viewbox x:Name="Vb_ScanPrompt"
+							 Grid.Row="1"
+							 Stretch="Uniform">
+
+				<Grid Width="1080"
+							Height="200"
+							HorizontalAlignment="Center"
+							VerticalAlignment="Center"
+							Background="Orange">
+
+					<TextBlock x:Name="Tb_ScanPromptText"
+										 Margin="25,00,25,0"
+										 HorizontalAlignment="Center"
+										 VerticalAlignment="Center"
+										 FontFamily="Fonts/#Open Sans"
+										 FontSize="44"
+										 FontWeight="Bold"
+										 TextWrapping="Wrap"
+										 Foreground="White"
+										 TextAlignment="Center"
+										 />
+
+				</Grid>
+			</Viewbox>-->
+
+			<!--<Viewbox Grid.Row="2" Stretch="Fill">
+				<Rectangle Width="1"
+									 Height="1"
+									 Fill="#FF335533" />
+			</Viewbox>-->
+
+			<!--<Eco:Speechbubble x:Name="Uc_Speechbubble"
+												Grid.Row="2"
+												Margin="0,50,0,0"
+												HorizontalAlignment="Center"
+												VerticalAlignment="Top"
+												SbAngle="180"
+												TxtAngle="180" />-->
+
+			<!-- Coin -->
+			<Grid x:Name="Gr_Coin_AR"
+						Margin="0,0,0,-75"
+						Height="160"
+						Width="160"
+						VerticalAlignment="Bottom">
+
+				<Rectangle Fill="{StaticResource Scb_Blue3}"
+									 RadiusX="40"
+									 RadiusY="40"
+									 RenderTransformOrigin="0.5,0.5">
+
+					<Rectangle.RenderTransform>
+						<RotateTransform Angle="45" />
+					</Rectangle.RenderTransform>
+				</Rectangle>
+
+				<TextBlock Text="AR"
+									 Style="{StaticResource OpenSansExtraBold}"
+									 Foreground="White"
+									 HorizontalAlignment="Center"
+									 VerticalAlignment="Center"
+									 FontSize="48"/>
+
+			</Grid>
+
+			<!-- Coin 2 -->
+			<Grid x:Name="Gr_Coin_Blank"
+						Margin="0,0,0,-75"
+						Height="160"
+						Width="160"
+						VerticalAlignment="Bottom">
+
+				<Rectangle Fill="{StaticResource Scb_Blue5}"
+									 RadiusX="40"
+									 RadiusY="40"
+									 RenderTransformOrigin="0.5,0.5">
+
+					<Rectangle.RenderTransform>
+						<RotateTransform Angle="45" />
+					</Rectangle.RenderTransform>
+				</Rectangle>
+
+			</Grid>
+
+
+			<!-- Help button -->
+			<Grid x:Name="Gr_Help" Visibility="Hidden"
+						Grid.Row="0"
+						Height="200"
+						Width="350"
+						Margin="0,410,60,0"
+						HorizontalAlignment="Right"
+						VerticalAlignment="Top"
+						>
+
+				<Rectangle RadiusX="20"
+									 RadiusY="20"
+									 Height="140"
+								   Width="300"
+									 HorizontalAlignment="Left"
+									 Fill="{StaticResource Scb_Blue4}"
+									 />
+
+				<TextBlock Style="{StaticResource OpenSansExtraBold}"
+									 Margin="25,0,0,0"
+									 Foreground="White"
+									 FontSize="42"
+									 Text="HILFE"
+									 VerticalAlignment="Center"
+									 />
+
+				<Grid Height="160"
+							Width="160"
+							Margin="0"
+							HorizontalAlignment="Right"
+							VerticalAlignment="Center">
+					
+					<Rectangle 
+									 Fill="{StaticResource Scb_Blue3}"
+									 RadiusX="30"
+									 RadiusY="30"
+									 RenderTransformOrigin="0.5,0.5">
+
+						<Rectangle.RenderTransform>
+							<RotateTransform Angle="45" />
+						</Rectangle.RenderTransform>
+					</Rectangle>
+
+					<Rectangle Height="125"
+										 Width="125"
+										 Margin="10,10,0,0"
+										 Fill="{StaticResource Ib_icon-help}"
+										 />
+				</Grid>
+
+				<Button x:Name="Btn_Help" 
+								Style="{StaticResource Btn_Invis}"
+								/>
+			</Grid>
+
+			<Grid x:Name="Gr_Confirm"
+						Grid.Row="1"
+						Height="100"
+						Width="100"
+						Margin="0,0,0,50"
+						VerticalAlignment="Bottom"
+						>
+
+				<Eco:ConfirmButton />
+
+			</Grid>
+
+		</Grid>
+	</Viewbox>
+	
+	<!--<Viewbox Stretch="Uniform">
+
+
+		<Grid x:Name="Gr_Mockup"
+					Width="1080"
+					Height="1920">
+
+			<Rectangle Opacity="0.1">
+				<Rectangle.Fill>
+					<ImageBrush ImageSource="D:\Dev\SCM\ecogotchi_reboot\EcogotchiBlend\UI\mockup_screens\oekogotschi_GUI_02_scan.jpg" />
+				</Rectangle.Fill>
+			</Rectangle>
+
+		</Grid>
+	</Viewbox>-->
+
+
+	<Viewbox Stretch="UniformToFill"
+					 HorizontalAlignment="Center">
+		
+		<Grid Name="Gr_Loading"
+					Height="1920"
+					Width="1440">
+
+			<Rectangle>
+				<Rectangle.Fill>
+					<ImageBrush ImageSource="Imgs/loading.jpg" />
+				</Rectangle.Fill>
+			</Rectangle>
+
+		</Grid>
+	</Viewbox>
+
+</Grid>

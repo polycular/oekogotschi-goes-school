@@ -1,0 +1,12 @@
+{
+	"data": {
+		"id": "88d611ee-dee6-4607-b331-0b1844fd6ce9",
+		"type": "transition",
+		"attributes": {
+			"type": "next",
+			"data": {
+				"target": "60f9949a-f158-4dff-8b0a-34cb3c7fbdd9"
+			}
+		}
+	}
+}

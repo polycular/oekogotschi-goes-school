@@ -1,0 +1,14 @@
+{
+	"data": {
+		"id": "dea2f2dd-201b-4b54-b998-eb33ac62bd3e",
+		"type": "consequence",
+		"attributes": {
+			"option": "Kein Handy",
+			"comfort": -1,
+			"health": 1,
+			"credits": -2,
+			"header": "aString",
+			"texts": ["Er hat kein Handy", ":("]
+		}
+	}
+}
